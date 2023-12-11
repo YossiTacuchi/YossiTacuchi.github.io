@@ -1,4 +1,5 @@
-var globe = planetaryjs.planet();
+(function() {
+  var globe = planetaryjs.planet();
   // Load our custom `autorotate` plugin; see below.
   globe.loadPlugin(autorotate(10));
   // The `earth` plugin draws the oceans and the land; it's actually
@@ -7,7 +8,7 @@ var globe = planetaryjs.planet();
   // Note that we're loading a special TopoJSON file
   // (world-110m-withlakes.json) so we can render lakes.
   globe.loadPlugin(planetaryjs.plugins.earth({
-    topojson: { file:   'http://planetaryjs.com/world-110m-withlakes.json' },
+    topojson: { file:   '/world-110m-withlakes.json' },
     oceans:   { fill:   '#000080' },
     land:     { fill:   '#339966' },
     borders:  { stroke: '#008000' }
@@ -113,3 +114,4 @@ var globe = planetaryjs.planet();
       });
     };
   };
+})();
