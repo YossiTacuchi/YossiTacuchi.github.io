@@ -683,6 +683,67 @@ footer{
     border: none !important;
 }
 
+.whatsapp-floating{
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    bottom: 54px;
+    opacity: 0;
+}
+.whatsapp-floating .circle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-radius: 32px;
+    background: #00D33A;
+
+    /* btn default */
+    box-shadow: 10px 10px 35px 0px rgba(76, 72, 150, 0.35);
+}
+.whatsapp-floating .circle .wsp-icon{
+    display: flex;
+    padding: 13px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 32px;
+}
+.whatsapp-floating .circle .text{
+    color: #00D33A;
+    text-align: center;
+
+    /* buttons */
+    font-size: 0px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 0;
+    letter-spacing: 0;
+    transition:  all 0.45s;
+}
+.whatsapp-floating .circle .wsp-icon *{
+    transition:  all 0.45s;
+}
+.whatsapp-floating:hover .circle{
+    display: flex;
+    padding-left: 15px;
+    justify-content: flex-end;
+    align-items: center;
+
+    background: #fff;
+}
+.whatsapp-floating:hover .circle .wsp-icon *{
+    fill: #00D33A;
+}
+.whatsapp-floating:hover .circle .text{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+    letter-spacing: 0.36px;
+}
+
 @media all and (max-width: 768px){
     .dropdown-menu.desktop{
         display: none;
@@ -719,4 +780,21 @@ footer{
   
   .slideIn {
     animation-name: slideIn;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .fadeInUp {
+    animation: 1.5s fadeInUp;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
   }
