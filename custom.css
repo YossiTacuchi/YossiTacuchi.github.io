@@ -17,6 +17,16 @@ li.nav-item {
 .navbar.bg-light button{
     color: #485D96;
 }
+.navbar.bg-transparent .nav-link:hover,
+.navbar.bg-transparent .nav-link:focus,
+.navbar.bg-transparent .nav-link:active{
+    color: #01ACD2;
+}
+.navbar.bg-light .nav-link:hover,
+.navbar.bg-light .nav-link:focus,
+.navbar.bg-light .nav-link:active{
+    color: #4C4896;
+}
 .navbar.bg-light button{
     border-color: #485D96;
 }
