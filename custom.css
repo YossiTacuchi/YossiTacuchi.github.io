@@ -404,6 +404,10 @@ top: 0;
 .servicio .text .icon{
     color: #fff;
 }
+.servicio .text .icon .ico{
+    width: 60px;
+    position: relative;
+}
 .i-48 span{
     font-size: 48px;
 }
