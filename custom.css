@@ -224,6 +224,18 @@ a.link:active{
     line-height: 48px; /* 120% */
     text-transform: uppercase;
 }
+.subtitle{
+    color: #485D96;
+    text-align: center;
+
+    /* small bold */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
 .divider{
     display: flex;
     width: 250px;
@@ -458,9 +470,18 @@ top: 0;
 .mercancias{
     display: flex;
     padding: 40px 0px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     align-self: stretch;
+}
+.section-paises{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 15px;
 }
 .paises{
     display: flex;
