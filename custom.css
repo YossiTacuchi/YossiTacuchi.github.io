@@ -769,6 +769,18 @@ footer{
     letter-spacing: 0.36px;
 }
 
+/* Servicios */
+.banner{
+    position: relative;
+}
+.banner .img-banner{
+    width: 100%;
+}
+
+.banner{
+    background: linear-gradient(266deg, rgba(1, 172, 210, 0.00) 0%, rgba(76, 72, 150, 0.35) 47.16%, rgba(76, 72, 150, 0.70) 99.5%), lightgray 50% / cover no-repeat;
+}
+
 @media all and (max-width: 768px){
     .dropdown-menu.desktop{
         display: none;
