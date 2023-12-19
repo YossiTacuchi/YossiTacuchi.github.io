@@ -1194,6 +1194,38 @@ footer{
     color: #01ACD2;
 }
 
+.section-text-trabaja{
+    display: flex;
+    width: 510px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.section-text-trabaja .decorado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.section-text-trabaja .icon{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 40px;
+    background: #01ACD2;
+}
+.section-text-trabaja .icon span{
+    font-size: 64px;
+}
+.banner-trabaja{
+    width: 641px;
+    height: 456px;
+    flex-shrink: 0;
+}
+
 
 @media all and (max-width: 768px){
     .dropdown-menu.desktop{
