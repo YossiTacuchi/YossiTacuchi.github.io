@@ -295,6 +295,9 @@ p{
     font-weight: 400;
     line-height: 30px; /* 166.667% */
 }
+.light{
+    font-weight: 400;
+}
 .bold{
     font-weight: 700;
 }
@@ -1160,6 +1163,35 @@ footer{
 }
 .clientes .cliente .banner:hover{
     filter: saturate(100%);
+}
+.decorado-cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.decorado-cliente .icon{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 40px;
+    background: #01ACD2;
+}
+.decorado-cliente .icon span{
+    font-size: 64px;
+}
+.decorado-cliente .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.decorado-cliente small{
+    color: #01ACD2;
 }
 
 
