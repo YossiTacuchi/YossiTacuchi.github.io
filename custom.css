@@ -980,7 +980,7 @@ footer{
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    align-self: stretch;
+    align-self: center;
 }
 .profesional{
     display: flex;
