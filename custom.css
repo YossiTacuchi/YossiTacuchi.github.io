@@ -501,6 +501,7 @@ top: 0;
 .transporte-salidas *,
 .transporte-servicios *{
     margin-bottom: 0;
+    white-space: nowrap;
 }
 
 .mercancias{
