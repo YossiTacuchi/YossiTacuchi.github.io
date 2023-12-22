@@ -915,7 +915,7 @@ footer{
 .grid-servicios .nombre-servicio .servicio-icon .icon-servicio{
     display: flex;
     width: 64px;
-    height: 64px;
+    height: 49px;
     justify-content: center;
     align-items: center;
 
