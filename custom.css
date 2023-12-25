@@ -100,8 +100,9 @@ li.nav-item {
     z-index: 99;
     right: inherit;
     margin: 0;
-    left: 70px;
+    right: 70px;
     bottom: 15%;
+    left: auto;
 }
 .carousel-dark .carousel-indicators [data-bs-target]{
     width: 16px;
@@ -478,7 +479,7 @@ top: 0;
 
 .transporte{
     display: flex;
-    width: 320px;
+    width: 273px;
     padding: 20px;
     flex-direction: column;
     align-items: center;
@@ -523,7 +524,7 @@ top: 0;
 }
 .paises{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
     gap: 10px;
@@ -1293,3 +1294,51 @@ footer{
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
+
+  /*mobile */
+  @media all and ( max-width: 1024px ){
+    .carousel-item{
+        height: 420px;
+    }
+    .carousel-caption{
+        flex-wrap: nowrap;
+    }
+    .carousel-caption,
+    .servicios,
+    .mercancias,
+    .section .flex-text,
+    .textos-cta{
+        flex-direction: column !important;
+    }
+    .paises{
+        justify-content: space-around;
+    }
+    .servicio{
+        display: table;
+        width: 320px;
+    }
+    .section-cta{
+        width: 520px;
+    }
+    
+  }
+
+  /* laptops y tables */
+  @media all and ( max-width: 1380px ){
+    #rotatingGlobe{
+        width: 420px !important;
+        height: 420px !important;
+    }
+    .transporte{
+        width: 185px;
+    }
+    .transporte-salidas, .transporte-servicios{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+   /*pcs */
+   @media all and ( min-width: 1381px ){
+
+   }
