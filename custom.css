@@ -1267,6 +1267,14 @@ footer{
     .dropdown-menu.mobile{
         display: block;
     }
+    .servicios{
+        flex-direction: column;
+    }
+    .servicio {
+        width: 320px;
+        height: 352px;
+        padding: 150px 20px;
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -1317,6 +1325,32 @@ footer{
 
   /*mobile */
   @media all and ( max-width: 1024px ){
+    .navbar .container-fluid{
+        
+    }
+    .navbar .container-fluid .navbar-brand{
+        order: 1;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .container-fluid .button-toggle{
+        order: 0;
+    }
+    .navbar .container-fluid .button-right{
+        order: 2;
+        opacity: 0;
+    }
+    .navbar .container-fluid .navbar-collapse{
+        order: 3;
+    }   
+    .button-toggle{
+        display: flex;
+        
+    }
+    .button-right{
+        display: flex;
+    }
     .row-tipo1{
         padding: 40px 0;
     }
@@ -1357,7 +1391,6 @@ footer{
         width: auto !important;
     }
     .carousel-caption,
-    .servicios,
     .mercancias,
     .section .flex-text,
     .textos-cta,
@@ -1370,9 +1403,13 @@ footer{
         justify-content: space-around;
     }
     .servicio{
-        display: table;
         width: 320px;
+        height: 350px;
         padding: 100px 10px;
+    }
+    .servicios{
+        padding: 20px;
+        width: 100%;
     }
     .textos-cta{
         justify-content: center;
@@ -1401,7 +1438,7 @@ footer{
         width: 100%;
     }
     .certificaciones img{
-        width: 44%;
+        width: 220px;
     }
     .menu-footer,
     .navigation{
