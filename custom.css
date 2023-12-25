@@ -61,7 +61,8 @@ li.nav-item {
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 54px; /* 112.5% */
+    line-height: 52px; /* 112.5% */
+    margin-bottom: 0;
     
     text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.30);
 }
@@ -506,7 +507,7 @@ top: 0;
 
 .mercancias{
     display: flex;
-    padding: 40px 0px;
+    padding: 40px 0px 60px;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -554,6 +555,9 @@ top: 0;
     align-items: center;
     gap: 10px;
     align-self: stretch;
+}
+.row-tipo2#video-corporativo{
+    padding-bottom: 0;
 }
 .video{
     position: relative;
@@ -1161,12 +1165,16 @@ footer{
     align-items: center;
     gap: 10px;
 }
-.clientes .cliente .banner{
-    filter: saturate(0%);
+.clientes .cliente .banner,
+.clientes .cliente small{
+    opacity: 0.75;
+    filter: saturate(80%);
     transition: all 0.2s;
 }
-.clientes .cliente .banner:hover{
+.clientes .cliente .banner:hover,
+.clientes .cliente:hover small{
     filter: saturate(100%);
+    opacity: 1;
 }
 .decorado-cliente{
     display: flex;

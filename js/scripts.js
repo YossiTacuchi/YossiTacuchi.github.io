@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
     detectNav();
+
     $(window).on("scroll", function () {
         detectNav();
     });
@@ -38,4 +39,8 @@ jQuery(document).ready(function ($) {
         }
         
     }
+});
+
+jQuery(window).load(function ($) {
+    console.log("readyyy");
 });
