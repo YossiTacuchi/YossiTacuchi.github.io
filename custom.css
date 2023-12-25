@@ -7,6 +7,21 @@ li.nav-item {
     justify-content: center;
     flex-direction: column;
 }
+.navbar button {
+    padding: 5px;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+}
+.navbar button span{
+    font-size: 30px;
+}
+.navbar.bg-transparent button{
+    border-color: #FFF;
+}
+.navbar.bg-transparent button span{
+    color: #FFF;
+}
 .navbar{
     transition: all 0.35s;
 }
@@ -84,6 +99,9 @@ li.nav-item {
     padding-top: 10px;
     padding-bottom: 10px;
     left: 70px;
+}
+.carousel-item img {
+    width: 100%
 }
 .carousel-item:after{
     content: '';
@@ -416,7 +434,7 @@ top: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .servicio .text .icon{
     display: flex;
@@ -455,7 +473,7 @@ top: 0;
     color: #fff;
 }
 .servicio .text .icon .ico{
-    width: 80px;
+    width: 90px;
     position: relative;
 }
 .i-48 span{
@@ -689,6 +707,7 @@ background: #0000004D !important;
 .certificaciones{
     display: flex;
     width: 1028px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -742,6 +761,7 @@ footer{
 .menu-social{
     display: flex;
     padding: 10px 148px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -1297,17 +1317,53 @@ footer{
 
   /*mobile */
   @media all and ( max-width: 1024px ){
+    .row-tipo1{
+        padding: 40px 0;
+    }
+    .row-tipo2{
+        padding: 40px 0;
+    }
+    .h3,h3{
+        font-size: 36px !important;
+        line-height: 38px !important;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .btn.btn-ad,
+    .btn.btn-ad-outline, 
+    .btn.btn-ad-outline-light{
+        height: auto;
+        padding: 5px 25px;
+        border-radius: 40px;
+    }
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .carousel-caption {
+        top: 25%;
+        left: 20px;
+    }
     .carousel-item{
         height: 420px;
     }
     .carousel-caption{
         flex-wrap: nowrap;
     }
+    .carousel-item img {
+        height: fit-content;
+        width: auto !important;
+    }
     .carousel-caption,
     .servicios,
     .mercancias,
     .section .flex-text,
-    .textos-cta{
+    .textos-cta,
+    .menu-footer,
+    .navigation,
+    .menu-social{
         flex-direction: column !important;
     }
     .paises{
@@ -1316,11 +1372,41 @@ footer{
     .servicio{
         display: table;
         width: 320px;
+        padding: 100px 10px;
+    }
+    .textos-cta{
+        justify-content: center;
+        gap: 10px;
+    }
+    .headline {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .row-tipo2.row-cta{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .img-cta {
+        width: 188px;
+        height: 330px;
     }
     .section-cta{
-        width: 520px;
+        width: 100%;
+        gap: 10px;
     }
-    
+    .certificaciones,
+    .col-footer{
+        width: 100%;
+    }
+    .certificaciones img{
+        width: 44%;
+    }
+    .menu-footer,
+    .navigation{
+        align-items: center;
+    }
   }
 
   /* laptops y tables */
@@ -1331,6 +1417,7 @@ footer{
     }
     .transporte{
         width: 185px;
+        padding-bottom: 10px;
     }
     .transporte-salidas, .transporte-servicios{
         flex-direction: column;
