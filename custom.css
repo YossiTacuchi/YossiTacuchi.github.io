@@ -28,6 +28,9 @@ li.nav-item {
 .navbar-nav{
     gap: 20px;
 }
+.navbar .container-fluid .button-right{
+    opacity: 0;
+}
 .navbar.bg-light a,
 .navbar.bg-light button{
     color: #485D96;
@@ -1325,8 +1328,8 @@ footer{
 
   /*mobile */
   @media all and ( max-width: 1024px ){
-    .navbar .container-fluid{
-        
+    .nav-link{
+        color: #485D96;
     }
     .navbar .container-fluid .navbar-brand{
         order: 1;
@@ -1339,10 +1342,10 @@ footer{
     }
     .navbar .container-fluid .button-right{
         order: 2;
-        opacity: 0;
     }
     .navbar .container-fluid .navbar-collapse{
         order: 3;
+        background-color: #fff;
     }   
     .button-toggle{
         display: flex;
@@ -1377,7 +1380,7 @@ footer{
         line-height: 28px;
     }
     .carousel-caption {
-        top: 25%;
+        top: 27%;
         left: 20px;
     }
     .carousel-item{
@@ -1444,6 +1447,10 @@ footer{
     .menu-footer,
     .navigation{
         align-items: center;
+    }
+    .whatsapp-floating {
+        right: 15px;
+        bottom: 35px;
     }
   }
 
