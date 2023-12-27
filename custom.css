@@ -193,7 +193,10 @@ a.link:active{
     width: 1290px;
     
 }
-
+.row-tipo1 .col-12{
+    width: 1290px
+    display: flex;
+}
 .row-tipo2{
     position: relative;
     display: flex;
@@ -429,13 +432,14 @@ small{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #485d96cf;
+    background-color: #485d96a8;
     z-index: 0;
 }
 .servicio img{
     position: absolute;
-left: 0;
-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 .servicio .text{
     position: relative;
@@ -698,7 +702,7 @@ background: #0000004D !important;
 }
 .section-cta{
     display: flex;
-    width: 1280px;
+    width: 1290px;
     height: 220px;
     justify-content: space-around;
     align-items: end;
@@ -872,7 +876,7 @@ footer{
     position: relative;
 }
 .banner .img-banner{
-    width: 100%;
+    width: 100vw;
 }
 
 .banner-item:after{
@@ -1152,14 +1156,6 @@ footer{
     height: 456px;
     flex-shrink: 0;
 }
-.banner,
-.row-tipo1 .col-12{
-    width: 100% !important;
-    display: flex;
-}
-.section-text-mision {
-    order: -1;
-}
 .valor .icon{
     width: 64px;
     height: 64px;
@@ -1416,6 +1412,10 @@ footer{
         height: -webkit-fill-available;
         width: auto !important;
     }
+    .row-tipo1 .col-12{
+        width: 100% !important;
+        display: flex;
+    }
     .carousel-caption,
     .mercancias,
     .section .flex-text,
@@ -1495,7 +1495,7 @@ footer{
         right: 15px;
         bottom: 35px;
     }
-    /* paginas */
+    /************** paginas **********************/
     .banner .img-banner {
         height: 320px;
         margin: auto;
@@ -1555,6 +1555,9 @@ footer{
     }
     img.bg-banner-map{
         width: 100%;
+    }
+    .section-text-mision {
+        order: -1;
     }
   }
 
