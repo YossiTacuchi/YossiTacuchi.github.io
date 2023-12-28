@@ -1,9 +1,15 @@
 jQuery(document).ready(function ($) {
     detectNav();
+    detectMenuRes();
 
     $(window).on("scroll", function () {
         detectNav();
     });
+    $(window).resize(function(){
+        detectMenuRes();
+    });
+    
+    
 
     $('.btn-play').on('click', function() {
         $('video').trigger('play');
@@ -37,7 +43,12 @@ jQuery(document).ready(function ($) {
             $('.btn-contacto1').removeClass('hide');
             $('.btn-contacto2').addClass('hide');
         }
-        
+    }
+
+    function detectMenuRes(){
+        if (window.matchMedia('screen and (max-width: 991px)').matches) {
+            $('.nav-drop-servicios').attr("id","navbarDropdownMobile");
+        }
     }
 });
 
