@@ -194,7 +194,7 @@ a.link:active{
     
 }
 .row-tipo1 .col-12{
-    width: 1290px
+    width: 1290px;
     display: flex;
 }
 .row-tipo2{
@@ -1289,6 +1289,32 @@ footer{
     display: none;
 }
 
+.section-text-servicio{
+    display: flex;
+    width: 510px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.section-text-servicio .decorado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.section-text-servicio .decorado .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    padding: 5px;
+    border-radius: 40px;
+    background: #01ACD2;
+}
+.section-text-servicio .decorado .icon .icon-servicio{
+    width: 60px;
+}
 
 @media all and (max-width: 768px){
     .servicios{
