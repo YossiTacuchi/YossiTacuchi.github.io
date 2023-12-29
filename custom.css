@@ -1557,6 +1557,7 @@ footer{
     .banner-mision,
     .banner-vision,
     .section-text-trabaja,
+    .section-text-servicio,
     .form{
         width: 100%;
         height: auto;
@@ -1606,6 +1607,13 @@ footer{
     }
     .section-text-mision {
         order: -1;
+    }
+    .section-text-servicio .icon {
+        width: 64px;
+        height: 64px;
+    }
+    .section-text-servicio .icon .icon-servicio{
+        width: 54px;
     }
   }
 
