@@ -1317,6 +1317,27 @@ footer{
     width: 60px;
 }
 
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1290px;
+    margin: 20px 0;
+}
+.galeria .img-galeria{
+    width: 243px;
+    height: 200px;
+    background-color: #fff;
+}
+.galeria .img-galeria img{
+    width: 100%;
+}
+.banner-servicio{
+    width: 635px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
 @media all and (max-width: 768px){
     .servicios{
         flex-direction: column;
@@ -1326,6 +1347,7 @@ footer{
         height: 352px;
         padding: 150px 20px;
     }
+
 }
 
 @media all and (min-width: 768px) {
@@ -1615,6 +1637,19 @@ footer{
     }
     .section-text-servicio .icon .icon-servicio{
         width: 54px;
+    }
+    .galeria{
+       width: 100%;
+       flex-wrap: wrap;
+       gap: 20px;
+       padding: 0 30px;
+    }
+    .galeria .img-galeria{
+        width: 45%;
+        height: auto;
+    }
+    .galeria .img-galeria img{
+        width: 100%;
     }
   }
 
