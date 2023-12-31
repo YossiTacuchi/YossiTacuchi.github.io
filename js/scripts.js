@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
         detectMenuRes();
     });
     
-    
+    //Video home
 
     $('.btn-play').on('click', function() {
         $('video').trigger('play');
@@ -27,6 +27,30 @@ jQuery(document).ready(function ($) {
         $('.btn-pause').toggleClass('hidden');
       });
     
+      //Contacto form
+
+      $(".btn-enviar-contacto").click(function() {
+        // Obtén los datos del formulario
+        var formData = $(".form-contacto").serialize();
+
+        // Envía los datos al servidor (aquí debes tener un script en el servidor para procesar estos datos)
+        $.ajax({
+            type: "POST",
+            url: "procesar_contacto.php", // Reemplaza con la URL de tu script de procesamiento en el servidor
+            data: formData,
+            success: function(response) {
+                // Maneja la respuesta del servidor aquí
+                console.log(response);
+                alert("¡Formulario enviado con éxito!");
+            },
+            error: function(error) {
+                // Maneja los errores aquí
+                console.log(error);
+                alert("Hubo un error al enviar el formulario.");
+            }
+        });
+    });
+
     function detectNav(){
         if(!$('.navbar').hasClass('navbar-info')){
             if ($(document).scrollTop() > 50) {
