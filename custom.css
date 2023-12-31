@@ -204,6 +204,7 @@ a.link:active{
     justify-content: center;
     align-items: center;
     align-self: stretch;
+    gap: 20px;
 
     background-color: #EDF1FA;
 }
@@ -1292,7 +1293,7 @@ footer{
 
 .section-text-servicio{
     display: flex;
-    width: 510px;
+    width: 590px;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;

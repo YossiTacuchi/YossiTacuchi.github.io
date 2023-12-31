@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AD Logistics - Transporte Marítimo</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="custom.css" type="text/css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+  <script type='text/javascript' src='js/planetaryjs.min.js'></script>
+
+  <script type="text/javascript" src="/js/scripts.js"></script>
+
+</head>
+<body>
+  
+  <!--<app-root></app-root>-->
+  <!-- Toolbar -->
+<header class="flex bg-dark">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/logo alt.png" alt="" class="logo-alt">
+        <img src="/assets/logo.png" alt="" class="logo">
+      </a>
+      <div class="button-toggle">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+      <div class="button-right">right</div>
+      <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+
+            <div class="nav-desktop">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios
+              </a>
+              <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                <div class="menu-container">
+
+                  <div class="menu-text">
+                    <div class="">
+                      <p class="bold">Servicios AD LOGISTICS</p>
+                    <p>Te ofrecemos nuestros exclusivos servicios</p>
+                    </div>
+                    <a href="servicios.html" class="link">Conocer todos los servicios</a>
+
+                  </div>
+
+                  <a class="servicio" href="servicio-logistico.html">
+                    <img src="assets/Banner-Home-Servicio-Logistico.jpg" alt="">
+                    <div class="text">
+                      <div class="icon i-48">
+                        <img src="/assets/Servicio-Logistico.png" alt="" class="ico">
+                      </div>
+                      <div class="nombre">
+                        <div class="headline">Servicio Logístico</div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="servicio" href="servicio-de-aduanas.html">
+                    <img src="assets/Banner-Home-Servicio-de-Aduana.jpg" alt="">
+                    <div class="text">
+                      <div class="icon i-48">
+                        <img src="/assets/Servicio-de-Aduanas.png" alt="" class="ico">
+                      </div>
+                      <div class="nombre">
+                        <div class="headline"> Servicio de Aduanas</div>
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <a class="servicio" href="transporte-internacional.html">
+                    <img src="assets/Banner-Home-Transporte-Internacional.jpg" alt="">
+                    <div class="text">
+                      <div class="icon i-48">
+                        <img src="/assets/Transporte-Internacional.png" alt="" class="ico">
+                      </div>
+                      <div class="nombre">
+                        <div class="headline">Transporte Internacional</div>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-mobile">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMobile" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMobile">
+                <li><a class="dropdown-item" href="servicio-logistico.html">Servicio Logístico</a></li>
+                <li><a class="dropdown-item" href="servicio-de-aduanas.html">Servicio de Aduanas</a></li>
+                <li><a class="dropdown-item" href="transporte-internacional.html">Transporte Internacional</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Conocer todos los servicios</a></li>
+              </ul>
+            </div>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="clientes.html">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="trabaja-con-nosotros.html">Trabaja con nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://adlogistics.zfcargo.net/tracking/">Tracking</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="btn btn-ad-outline btn-contacto1">Contacto</a>
+            <a href="contacto.html" class="btn btn-ad-outline-light btn-contacto2">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container-fluid px-0 mx-0 overflow-hidden" role="main">
+
+  <div class="banner banner-ad">
+    <div class="banner-item">
+      <div class="banner-caption">
+        <h3 class="text-white">Transporte Marítimo </h3>
+      </div>
+      <img src="/assets/9-Transporte-maritimo.jpg" alt="" class="img-banner">
+    </div>
+    
+  </div>
+
+
+  <div class="row row-tipo1 ">
+    <div class="col-12 flex-row justify-content-between align-items-start">
+
+        <div class="section-text-servicio">
+            <div class="decorado">
+                <div class="icon">
+                    <img src="/assets/Transporte-Maritimo.png" alt="" class=" icon-servicio">
+                </div>
+                <div class="headline text-ad1">Transporte Marítimo</div>
+            </div>
+            <div class="separator"><img src="../assets/divider.svg" alt=""></div>
+            <p>El transporte marítimo es el principal medio para el comercio internacional. Disponemos de contenedores marítimos para todo tipo de industrias y sectores, con las mejores tarifas del mercado.
+
+                </p>
+                <p>
+
+                Fletes Internacionales desde y hacia todo el mundo en contenedores de 20’/ 40’/ ST/ HQ/ REFEER/ NOR/ OPEN TOP/ FLAT RACK, etc.
+            </p>
+            <ul class="list-group list-group-flush">
+                <li>
+                    <p class="bold">Carga FULL CONTAINER LOAD (FCL)</p>
+                    <p>Son contenedores en los que la mercadería que hay dentro le pertenece a una sola persona.</p>
+                </li>
+                <li>
+                    <p class="bold">Carga LESS CONTAINER LOAD (LCL)</p>
+                    <p>Ampara mercancía de todos los tipos y de distintos clientes. deal para cargas pequeñas, pero también es evaluada ya que de ser carga peligrosa, debemos revisar si puede afectar la mercadería.</p>
+                </li>
+                <li>
+                    <p class="bold">Carga BREAK BULK</p>
+                    <p>Conocida como carga sobre dimensionada. Mercaderías que no pueden ser contenerizadas por sus medidas y necesita ser transportada de forma especial.</p>
+                </li>
+                <li>
+                    <p class="bold">Contenedores 40 ST y 40 HQ DRY.</p>
+                    <p>21 días libres de sobreestadía.</p>
+                </li>
+                <li>
+                    <p class="bold">Contenedores de 20 ST DR.</p>
+                    <p>21 días libres de sobreestadía.</p>
+                </li>
+                <li>
+                    <p class="bold">Contenedores NOR20 ST y 40 HQ</p>
+                    <p>14 días libres de sobreestadía.</p>
+                </li>
+                <li>
+                    <p class="bold">Contenedores REEFER 20 ST y 40 HQ</p>
+                    <p>6 días libres de sobreestadía y 3 días de energía vía DPW - APM / IMUPESA.</p>
+                </li>
+            </ul>
+             
+        </div>
+        <div class="banner">
+            <img src="/assets/Transporte-Maritimo.jpg" alt="" class="banner-servicio">
+        </div>
+
+    </div>
+  </div>
+
+  <div class="row row-tipo2 ">
+    <div class="col-12 flex-row justify-content-start">
+        <div class="titles px-0">
+            <small class="bold">Galería de imágenes</small>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="img-galeria">
+            <img src="" alt="galeria1" class="img-responsive">
+        </div>
+        <div class="img-galeria">
+            <img src="" alt="galeria2">
+        </div>
+        <div class="img-galeria">
+            <img src="" alt="galeria3">
+        </div>
+        <div class="img-galeria">
+            <img src="" alt="galeria4">
+        </div>
+    </div>
+  </div>
+
+
+  <div class="row row-tipo1">
+    <div class="col-12">
+        <div class="titles">
+          <div class="title">Ver otros servicios</div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="grid-servicios">
+
+            <a class="nombre-servicio" href="servicio-de-aduanas.html">
+              <div class="servicio-icon">
+                <img src="/assets/Servicio-de-Aduanas.png" alt="" class="icon icon-servicio">
+                <small class="bold">Servicio de Aduanas</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="servicio-logistico.html">
+              <div class="servicio-icon">
+                <img src="/assets/Servicio-Logistico.png" alt="" class="icon icon-servicio">
+                <small class="bold">Servicio Logístico</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="deposito-temporal.html">
+              <div class="servicio-icon">
+                <img src="/assets/Deposito-temporal.png" alt="" class="icon icon-servicio">
+                <small class="bold">Depósito Temporal</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="seguro.html">
+              <div class="servicio-icon">
+                <img src="/assets/Seguro.png" alt="" class="icon icon-servicio">
+                <small class="bold">Seguro Internacional</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="transporte-local.html">
+              <div class="servicio-icon">
+                <img src="/assets/Transporte-Local.png" alt="" class="icon icon-servicio">
+                <small class="bold">Transporte Local</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="asesoria.html">
+              <div class="servicio-icon">
+                <img src="/assets/Asesoria.png" alt="" class="icon icon-servicio">
+                <small class="bold">Asesoría</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="verificacion-de-proveedores.html">
+              <div class="servicio-icon">
+                <img src="/assets/Verificacion.png" alt="" class="icon icon-servicio">
+                <small class="bold">Verificación de Proveedores</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="transporte-aereo.html">
+              <div class="servicio-icon">
+                <img src="/assets/Transporte-Aereo.png" alt="" class="icon icon-servicio">
+                <small class="bold">Transporte Aereo</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="transporte-terrestre.html">
+              <div class="servicio-icon">
+                <img src="/assets/Transporte-Terrestre.png" alt="" class="icon icon-servicio">
+                <small class="bold">Transporte Terrestre</small>
+              </div>
+            </a>
+  
+            <a class="nombre-servicio" href="agenciamiento-aduana.html">
+              <div class="servicio-icon">
+                <img src="/assets/Agenciamiento-de-Aduana.png" alt="" class="icon icon-servicio">
+                <small class="bold">Agenciamiento Aduana</small>
+              </div>
+            </a>
+  
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="col col-footer">
+        <div class="logo-footer">
+          <img src="/assets/logo alt.png" alt="">
+        </div>
+        <div class="menu-footer">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="clientes.html">Clientes</a>
+          <a href="trabaja-con-nosotros.html">Trabaja con nosotros</a>
+          <a href="">Tracking</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="menu-social">
+          <a href="http://adlogistics.librodereclamaciones-peru.com/libro/" target="_blank">
+            <img src="/assets/libro.svg" alt="">
+          </a>
+          <div class="socials">
+            <a href="https://www.facebook.com/adlogisticsperu" class="social-link facebook" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/advanced-distribution-logistics-sac" class="social-link linkedin" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" fill="white"/>
+                <path d="M6 9H2V21H6V9Z" fill="white"/>
+                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/adlogisticsperu/" class="social-link instagram" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#01ACD2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.9997 11.37C16.1231 12.2022 15.981 13.0522 15.5935 13.799C15.206 14.5458 14.5929 15.1514 13.8413 15.5297C13.0898 15.9079 12.2382 16.0396 11.4075 15.9059C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1902 8.22744 13.4229 8.09377 12.5922C7.96011 11.7615 8.09177 10.9099 8.47003 10.1584C8.84829 9.40685 9.45389 8.79374 10.2007 8.40624C10.9475 8.01874 11.7975 7.87658 12.6297 8C13.4786 8.12588 14.2646 8.52146 14.8714 9.1283C15.4782 9.73515 15.8738 10.5211 15.9997 11.37Z" fill="#01ACD2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@adlogisticsperu" class="social-link tiktok" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <mask id="path-1-inside-1_1972_4643" fill="white">
+                  <path d="M20.8492 6.15393C19.7034 5.91897 18.6658 5.33932 17.8878 4.49947C17.1097 3.65962 16.6318 2.60349 16.5238 1.48504V1H12.5712V16.0372C12.5687 16.7029 12.3488 17.3512 11.9422 17.8909C11.5356 18.4306 10.9628 18.8346 10.3043 19.0461C9.64587 19.2577 8.93481 19.2661 8.27108 19.0703C7.60735 18.8744 7.02431 18.4841 6.6039 17.9543C6.17695 17.4156 5.94012 16.7605 5.92773 16.084C5.91535 15.4075 6.12806 14.7449 6.53502 14.1921C6.94198 13.6394 7.52203 13.2252 8.19106 13.0098C8.86009 12.7943 9.58332 12.7888 10.2559 12.9939V9.14443C8.75613 8.94569 7.2291 9.20129 5.88836 9.87547C4.54762 10.5497 3.46024 11.6087 2.77831 12.9045C2.09638 14.2003 1.854 15.668 2.08509 17.1023C2.31618 18.5367 3.00917 19.8659 4.06713 20.9041C5.07605 21.8937 6.36971 22.5726 7.78296 22.8543C9.19622 23.1359 10.665 23.0074 12.0017 22.4853C13.3385 21.9631 14.4826 21.071 15.288 19.9227C16.0935 18.7744 16.5237 17.4221 16.5238 16.0383V8.35474C18.1211 9.44946 20.0364 10.0365 22 10.0331V6.26831C21.6133 6.26877 21.2276 6.23043 20.8492 6.15393Z"/>
+                </mask>
+                <path d="M20.8492 6.15393C19.7034 5.91897 18.6658 5.33932 17.8878 4.49947C17.1097 3.65962 16.6318 2.60349 16.5238 1.48504V1H12.5712V16.0372C12.5687 16.7029 12.3488 17.3512 11.9422 17.8909C11.5356 18.4306 10.9628 18.8346 10.3043 19.0461C9.64587 19.2577 8.93481 19.2661 8.27108 19.0703C7.60735 18.8744 7.02431 18.4841 6.6039 17.9543C6.17695 17.4156 5.94012 16.7605 5.92773 16.084C5.91535 15.4075 6.12806 14.7449 6.53502 14.1921C6.94198 13.6394 7.52203 13.2252 8.19106 13.0098C8.86009 12.7943 9.58332 12.7888 10.2559 12.9939V9.14443C8.75613 8.94569 7.2291 9.20129 5.88836 9.87547C4.54762 10.5497 3.46024 11.6087 2.77831 12.9045C2.09638 14.2003 1.854 15.668 2.08509 17.1023C2.31618 18.5367 3.00917 19.8659 4.06713 20.9041C5.07605 21.8937 6.36971 22.5726 7.78296 22.8543C9.19622 23.1359 10.665 23.0074 12.0017 22.4853C13.3385 21.9631 14.4826 21.071 15.288 19.9227C16.0935 18.7744 16.5237 17.4221 16.5238 16.0383V8.35474C18.1211 9.44946 20.0364 10.0365 22 10.0331V6.26831C21.6133 6.26877 21.2276 6.23043 20.8492 6.15393Z" fill="#01ACD2"/>
+                <path d="M13.816 2.92886L13.8137 2.92776L-0.610512 32.9786L-0.608218 32.9797L13.816 2.92886ZM20.8492 6.15393L14.1534 38.8078L14.1982 38.817L14.2431 38.8261L20.8492 6.15393ZM16.5238 1.48504H-16.8096V3.09136L-16.6551 4.69024L16.5238 1.48504ZM16.5238 1H49.8571V-32.3333H16.5238V1ZM12.5712 1V-32.3333H-20.7621V1H12.5712ZM12.5712 16.0372L45.9043 16.1597L45.9045 16.0985V16.0372H12.5712ZM6.6039 17.9543L-19.5204 38.6577L-19.5144 38.6653L-19.5085 38.6728L6.6039 17.9543ZM10.2559 12.9939L0.530963 44.8771L43.5892 58.0106L43.5892 12.9939H10.2559ZM10.2559 9.14443H43.5892V-20.063L14.6349 -23.9L10.2559 9.14443ZM4.06713 20.9041L-19.2797 44.6956L-19.2741 44.7011L4.06713 20.9041ZM16.5238 16.0383L49.8571 16.0404V16.0383H16.5238ZM16.5238 8.35474L35.3675 -19.1412L-16.8096 -54.8996V8.35474H16.5238ZM22 10.0331L22.0568 43.3664L55.3333 43.3097V10.0331H22ZM22 6.26831H55.3333V-27.1045L21.9605 -27.065L22 6.26831ZM27.5451 -26.5C33.0589 -25.3693 38.28 -22.5368 42.3402 -18.1543L-6.56462 27.1532C-0.948324 33.2154 6.34791 37.2073 14.1534 38.8078L27.5451 -26.5ZM42.3402 -18.1543C46.4202 -13.7503 49.0949 -8.0116 49.7026 -1.72017L-16.6551 4.69024C-15.8312 13.2186 -12.2008 21.0695 -6.56462 27.1532L42.3402 -18.1543ZM49.8571 1.48504V1H-16.8096V1.48504H49.8571ZM16.5238 -32.3333H12.5712V34.3333H16.5238V-32.3333ZM-20.7621 1V16.0372H45.9045V1H-20.7621ZM-20.7619 15.9148C-20.7375 9.26988 -18.534 2.94731 -14.6811 -2.16678L38.5655 37.9485C43.2316 31.7551 45.875 24.136 45.9043 16.1597L-20.7619 15.9148ZM-14.6811 -2.16678C-10.8452 -7.25836 -5.61782 -10.85 0.108903 -12.6897L20.4998 50.782C27.5434 48.5191 33.9164 44.1195 38.5655 37.9485L-14.6811 -2.16678ZM0.108903 -12.6897C5.8254 -14.5262 11.9539 -14.5971 17.7042 -12.9005L-1.16203 51.041C5.91576 53.1293 13.4663 53.0415 20.4998 50.782L0.108903 -12.6897ZM17.7042 -12.9005C23.4639 -11.201 28.7645 -7.7448 32.7163 -2.7642L-19.5085 38.6728C-14.7159 44.7131 -8.24922 48.9499 -1.16203 51.041L17.7042 -12.9005ZM32.7282 -2.74918C36.7615 2.34021 39.1318 8.71871 39.2555 15.4738L-27.4 16.6942C-27.2516 24.8022 -24.4076 32.4909 -19.5204 38.6577L32.7282 -2.74918ZM39.2555 15.4738C39.3792 22.2304 37.2427 28.7056 33.378 33.9548L-20.308 -5.57057C-24.9866 0.784208 -27.5485 8.58468 -27.4 16.6942L39.2555 15.4738ZM33.378 33.9548C29.5312 39.1799 24.2289 42.8643 18.4084 44.7386L-2.02626 -18.719C-9.18479 -16.4138 -15.6472 -11.9011 -20.308 -5.57057L33.378 33.9548ZM18.4084 44.7386C12.5988 46.6094 6.36311 46.656 0.530963 44.8771L19.9808 -18.8893C12.8035 -21.0784 5.12135 -21.0207 -2.02626 -18.719L18.4084 44.7386ZM43.5892 12.9939V9.14443H-23.0775V12.9939H43.5892ZM14.6349 -23.9C6.5598 -24.9701 -1.71681 -23.6106 -9.08654 -19.9048L20.8633 39.6557C16.175 42.0132 10.9525 42.8615 5.87686 42.1889L14.6349 -23.9ZM-9.08654 -19.9048C-16.4708 -16.1916 -22.716 -10.2266 -26.7195 -2.61927L32.2762 28.4283C29.6365 33.444 25.566 37.2909 20.8633 39.6557L-9.08654 -19.9048ZM-26.7195 -2.61927C-30.7354 5.01146 -32.2131 13.7815 -30.8239 22.4044L34.9941 11.8003C35.9211 17.5545 34.9281 23.3891 32.2762 28.4283L-26.7195 -2.61927ZM-30.8239 22.4044C-29.4364 31.016 -25.3064 38.7815 -19.2797 44.6956L27.414 -2.88739C31.3248 0.950294 34.0688 6.05732 34.9941 11.8003L-30.8239 22.4044ZM-19.2741 44.7011C-13.5442 50.3213 -6.3662 54.0234 1.26844 55.5448L14.2975 -9.83628C19.1056 -8.87812 23.6963 -6.53391 27.4084 -2.89288L-19.2741 44.7011ZM1.26844 55.5448C8.89779 57.0652 16.8372 56.3826 24.1298 53.534L-0.126407 -8.56338C4.49273 -10.3677 9.49464 -10.7934 14.2975 -9.83628L1.26844 55.5448ZM24.1298 53.534C31.4323 50.6815 37.9096 45.719 42.5775 39.0642L-12.0014 0.781175C-8.94446 -3.57706 -4.75539 -6.75523 -0.126407 -8.56338L24.1298 53.534ZM42.5775 39.0642C47.2586 32.3904 49.8566 24.3727 49.8571 16.0404L-16.8096 16.0362C-16.8092 10.4714 -15.0717 5.15836 -12.0014 0.781175L42.5775 39.0642ZM49.8571 16.0383V8.35474H-16.8096V16.0383H49.8571ZM-2.31998 35.8506C4.92438 40.8154 13.4483 43.3811 22.0568 43.3664L21.9432 -23.3002C26.6245 -23.3081 31.3179 -21.9165 35.3675 -19.1412L-2.31998 35.8506ZM55.3333 10.0331V6.26831H-11.3333V10.0331H55.3333ZM21.9605 -27.065C23.8017 -27.0672 25.6424 -26.8848 27.4553 -26.5182L14.2431 38.8261C16.8128 39.3457 19.4249 39.6047 22.0395 39.6016L21.9605 -27.065Z" fill="white" mask="url(#path-1-inside-1_1972_4643)"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="address">
+            <span class="material-symbols-outlined">
+              location_on
+              </span>
+            <span><strong>Calle Chiclayo 592, Miraflores, Lima, Perú</strong></span>
+          </div>
+          <div class="phone">
+            <span class="material-symbols-outlined">
+              call
+              </span>
+            <span><strong><a href="tel:+5114800448">(+511) 480-0448</a></strong></span>
+          </div>
+        </div>
+        <small class="copyright">
+          © 2023 aD Logistics, Inc. All rights reserved.
+        </small>
+    </div>
+  </footer>
+
+</div>
+
+<div class="whatsapp-floating fadeInUp">
+  <a class="circle" href="https://wa.me/+51922605488" target="_blank">
+    <span class="text">¡Resolvemos tus dudas!</span>
+    <div class="wsp-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+        <path d="M32.3085 5.52187C28.7545 1.95937 24.0214 0 18.9915 0C8.60937 0 0.161161 8.44821 0.161161 18.8304C0.161161 22.1469 1.02634 25.3871 2.67188 28.2455L0 38L9.98348 35.379C12.7317 36.8804 15.8277 37.6692 18.983 37.6692H18.9915C29.3652 37.6692 38 29.221 38 18.8388C38 13.8089 35.8625 9.08437 32.3085 5.52187ZM18.9915 34.4969C16.1754 34.4969 13.4187 33.742 11.0183 32.317L10.45 31.9777L4.52946 33.5299L6.10714 27.7536L5.73393 27.1598C4.16473 24.6661 3.34196 21.7906 3.34196 18.8304C3.34196 10.204 10.3652 3.1808 19 3.1808C23.1817 3.1808 27.1089 4.80937 30.0607 7.76964C33.0125 10.7299 34.8277 14.6571 34.8192 18.8388C34.8192 27.4737 27.6179 34.4969 18.9915 34.4969ZM27.5754 22.7746C27.1089 22.5371 24.7933 21.4004 24.3607 21.2478C23.9281 21.0866 23.6143 21.0103 23.3004 21.4853C22.9866 21.9603 22.0875 23.0121 21.8076 23.3344C21.5362 23.6482 21.2563 23.6906 20.7897 23.4531C18.0246 22.0705 16.2094 20.9848 14.3857 17.8549C13.9022 17.0237 14.8692 17.083 15.7683 15.2848C15.921 14.971 15.8446 14.6996 15.7259 14.4621C15.6071 14.2246 14.6656 11.9089 14.2754 10.9674C13.8938 10.0513 13.5036 10.1786 13.2152 10.1616C12.9437 10.1446 12.6299 10.1446 12.3161 10.1446C12.0022 10.1446 11.4933 10.2634 11.0607 10.7299C10.6281 11.2049 9.41518 12.3415 9.41518 14.6571C9.41518 16.9728 11.1031 19.2121 11.3321 19.5259C11.5696 19.8397 14.6487 24.5897 19.3732 26.6339C22.3589 27.9232 23.5295 28.0335 25.0223 27.8129C25.9299 27.6772 27.8045 26.6763 28.1946 25.5737C28.5848 24.471 28.5848 23.5295 28.4661 23.3344C28.3558 23.1223 28.042 23.0036 27.5754 22.7746Z" fill="white"/>
+      </svg>
+    </div>
+  </a>
+</div>
+
+</body>
+</html>
