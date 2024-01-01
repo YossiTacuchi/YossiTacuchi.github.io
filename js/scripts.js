@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
         // Envía los datos al servidor (aquí debes tener un script en el servidor para procesar estos datos)
         $.ajax({
             type: "POST",
-            url: "backend/procesar_contacto.php", // Reemplaza con la URL de tu script de procesamiento en el servidor
+            url: "https://yossitacuchi.github.io/backend/procesar_contacto.php", // Reemplaza con la URL de tu script de procesamiento en el servidor
             data: formData,
             success: function(response) {
                 // Maneja la respuesta del servidor aquí

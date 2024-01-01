@@ -17,7 +17,10 @@ try {
 
     // Cuerpo del correo electrónico
     $mensajeCorreo = "Nombre: $nombre\n";
+    $mensajeCorreo = "Apellidos: $apellidos\n";
+    $mensajeCorreo = "Empresa: $empresa\n";
     $mensajeCorreo .= "Correo Electrónico: $email\n";
+    $mensajeCorreo = "Teléfono: $telefono\n";
     $mensajeCorreo .= "Mensaje:\n$mensaje";
 
     // Cabeceras del correo electrónico
