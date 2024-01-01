@@ -1,32 +1,40 @@
 <?php
-// Recibe los datos del formulario
-$nombre = $_POST['nombre'];
-$nombre = $_POST['apellidos'];
-$nombre = $_POST['empresa'];
-$nombre = $_POST['telefono'];
-$email = $_POST['email'];
-$mensaje = $_POST['mensaje'];
 
-// Configura el destinatario del correo electrónico
-$destinatario = 'yoshi.tacuchi@gmail.com';
+try {
+   // Recibe los datos del formulario
+    $nombre = $_POST['nombre'];
+    $nombre = $_POST['apellidos'];
+    $nombre = $_POST['empresa'];
+    $nombre = $_POST['telefono'];
+    $email = $_POST['email'];
+    $mensaje = $_POST['mensaje'];
 
-// Asunto del correo electrónico
-$asunto = 'Nuevo mensaje del formulario de contacto';
+    // Configura el destinatario del correo electrónico
+    $destinatario = 'yoshi.tacuchi@gmail.com';
 
-// Cuerpo del correo electrónico
-$mensajeCorreo = "Nombre: $nombre\n";
-$mensajeCorreo .= "Correo Electrónico: $email\n";
-$mensajeCorreo .= "Mensaje:\n$mensaje";
+    // Asunto del correo electrónico
+    $asunto = 'Nuevo mensaje del formulario de contacto';
 
-// Cabeceras del correo electrónico
-$headers = "From: $email\r\nReply-To: $email\r\n";
+    // Cuerpo del correo electrónico
+    $mensajeCorreo = "Nombre: $nombre\n";
+    $mensajeCorreo .= "Correo Electrónico: $email\n";
+    $mensajeCorreo .= "Mensaje:\n$mensaje";
 
-// Envía el correo electrónico
-mail($destinatario, $asunto, $mensajeCorreo, $headers);
+    // Cabeceras del correo electrónico
+    $headers = "From: $email\r\nReply-To: $email\r\n";
 
-// Responde al cliente (puedes personalizar este mensaje)
-echo '¡Gracias! Tu mensaje ha sido enviado con éxito.';
+    // Envía el correo electrónico
+    mail($destinatario, $asunto, $mensajeCorreo, $headers);
 
-// Puedes agregar más lógica aquí, como guardar los datos en una base de datos, etc.
+    // Responde al cliente (puedes personalizar este mensaje)
+    echo '¡Gracias! Tu mensaje ha sido enviado con éxito.';
+
+    // Puedes agregar más lógica aquí, como guardar los datos en una base de datos, etc.
+} catch (Exception $e) {
+    // Manejo de errores
+    echo 'Error: ' . $e->getMessage();
+}
+
+
 
 ?>

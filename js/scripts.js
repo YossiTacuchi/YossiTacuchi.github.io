@@ -32,11 +32,11 @@ jQuery(document).ready(function ($) {
       $(".btn-enviar-contacto").click(function() {
         // Obtén los datos del formulario
         var formData = $(".form-contacto").serialize();
-
+        alert("btn contacto");
         // Envía los datos al servidor (aquí debes tener un script en el servidor para procesar estos datos)
         $.ajax({
             type: "POST",
-            url: "procesar_contacto.php", // Reemplaza con la URL de tu script de procesamiento en el servidor
+            url: "backend/procesar_contacto.php", // Reemplaza con la URL de tu script de procesamiento en el servidor
             data: formData,
             success: function(response) {
                 // Maneja la respuesta del servidor aquí
@@ -76,6 +76,3 @@ jQuery(document).ready(function ($) {
     }
 });
 
-jQuery(window).load(function ($) {
-    console.log("readyyy");
-});
