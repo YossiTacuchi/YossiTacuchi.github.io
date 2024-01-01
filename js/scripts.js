@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
 
       $(".btn-enviar-contacto").click(function() {
         // Obtén los datos del formulario
-        var formData = $(".form-contacto").serialize();
+        var formData = $("#form-contacto").serialize();
         alert("btn contacto");
         // Envía los datos al servidor (aquí debes tener un script en el servidor para procesar estos datos)
         $.ajax({
