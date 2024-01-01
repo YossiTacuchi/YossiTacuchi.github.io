@@ -1,4 +1,5 @@
-
+var origin = window.location.origin;
+console.log(origin);
 var globe = planetaryjs.planet();
   // Load our custom `autorotate` plugin; see below.
   globe.loadPlugin(autorotate(10));
@@ -9,13 +10,16 @@ var globe = planetaryjs.planet();
   // (world-110m-withlakes.json) so we can render lakes.
   globe.loadPlugin(planetaryjs.plugins.earth({
     topojson: { file:   'https://yossitacuchi.github.io/js/world-110m-withlakes.json' },
-    oceans:   { fill:   '#000080' },
-    land:     { fill:   '#339966' },
-    borders:  { stroke: '#008000' }
+    //oceans:   { fill:   '#000080' },
+    //land:     { fill:   '#339966' },
+    //borders:  { stroke: '#008000' }
+    oceans:   { fill:   '#485D96' },
+    land:     { fill:   '#01ACD2' },
+    borders:  { stroke: '#ffffff' }
   }));
   // Load our custom `lakes` plugin to draw lakes; see below.
   globe.loadPlugin(lakes({
-    fill: '#000080'
+    fill: '#4C4896'
   }));
   // The `pings` plugin draws animated pings on the globe.
   globe.loadPlugin(planetaryjs.plugins.pings());
