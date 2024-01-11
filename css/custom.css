@@ -1324,13 +1324,20 @@ footer{
     justify-content: space-between;
     width: 1290px;
     margin: 20px 0;
+    gap: 20px;
 }
 .galeria .img-galeria{
     width: 243px;
     height: 200px;
     background-color: #fff;
 }
+.galeria .img-galeria2{
+    width: 50%;
+}
 .galeria .img-galeria img{
+    width: 100%;
+}
+.galeria .img-galeria2 img{
     width: 100%;
 }
 .banner-servicio{
@@ -1639,6 +1646,14 @@ footer{
     .section-text-servicio .icon .icon-servicio{
         width: 54px;
     }
+    .banner{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner .banner-servicio{
+        width: 100%;
+        height: auto;
+    }
     .galeria{
        width: 100%;
        flex-wrap: wrap;
@@ -1650,6 +1665,9 @@ footer{
         height: auto;
     }
     .galeria .img-galeria img{
+        width: 100%;
+    }
+    .galeria .img-galeria2{
         width: 100%;
     }
   }
