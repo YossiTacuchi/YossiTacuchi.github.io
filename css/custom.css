@@ -324,10 +324,10 @@ p{
     color: #485D96;
 
     /* Body extra bold */
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 166.667% */
+    line-height: 24px; /* 166.667% */
 }
 .light{
     font-weight: 400;
@@ -1004,7 +1004,7 @@ footer{
     padding: 10px 0px 0;
 }
 .contact-form{
-    padding: 0 20px;
+    padding: 20px;
 }
 .form-floating{
     border: 2px solid #485D96;
@@ -1348,6 +1348,12 @@ footer{
     height: 400px;
     flex-shrink: 0;
 }
+.contact-form{
+    background-color: #485D96;
+}
+.form-check label, .form-check a{
+    color: #ffff;
+}
 
 @media all and (max-width: 768px){
     .servicios{
@@ -1627,6 +1633,7 @@ footer{
     .section-map {
         padding: 0 20px 20px;
     }
+    
     .banner-valores {
         padding: 20px;
         width: 100%;
@@ -1685,6 +1692,10 @@ footer{
     }
     .galeria .img-galeria2{
         width: 100%;
+    }
+    .contact-form{
+        padding: 20px 0px;
+        background-color: #485D96;
     }
   }
 
