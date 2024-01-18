@@ -1355,6 +1355,15 @@ footer{
     color: #ffff;
 }
 
+#rotatingGlobe{
+    width: 540px !important;
+    height: 540px !important;
+    transform: translate(0px, 0px);
+}
+#rotatingGlobeMobile{
+    display: none;
+}
+
 @media all and (max-width: 768px){
     .servicios{
         flex-direction: column;
@@ -1701,10 +1710,15 @@ footer{
 
   /* laptops y tables */
   @media all and ( max-width: 1380px ){
-    #rotatingGlobe{
+    #rotatingGlobeMobile{
+        display: block;
         width: 420px !important;
         height: 420px !important;
-        transform: translate(20px, 0px);
+        margin-bottom: 20px;
+        transform: translate(0px, 0px);
+    }
+    #rotatingGlobe{
+        display: none;
     }
     .transporte{
         width: 185px;

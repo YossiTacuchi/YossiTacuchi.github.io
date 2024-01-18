@@ -1,4 +1,3 @@
-
 var globe = planetaryjs.planet();
   // Load our custom `autorotate` plugin; see below.
   globe.loadPlugin(autorotate(10));
@@ -38,7 +37,7 @@ var globe = planetaryjs.planet();
     }
   }));
   // Set up the globe's initial scale, offset, and rotation.
-  globe.projection.scale(270).translate([270, 270]).rotate([0, -10, 0]);
+  globe.projection.scale(210).translate([210, 210]).rotate([0, -10, 0]);
 
   // Every few hundred milliseconds, we'll draw another random ping.
   var colors = ['red', 'yellow', 'white', 'orange', 'green', 'cyan', 'pink'];
@@ -49,7 +48,7 @@ var globe = planetaryjs.planet();
     globe.plugins.pings.add(lng, lat, { color: color, ttl: 2000, angle: Math.random() * 10 });
   }, 150);
 
-  var canvas = document.getElementById('rotatingGlobe');
+  var canvas = document.getElementById('rotatingGlobeMobile');
   // Special code to handle high-density displays (e.g. retina, some phones)
   // In the future, Planetary.js will handle this by itself (or via a plugin).
   if (window.devicePixelRatio == 2) {
