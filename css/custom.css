@@ -1594,6 +1594,7 @@ footer{
     }
     .banner-caption{
         left: 20px;
+        top: 100px;
     }
     .section-text-mision,
     .banner-mision,
@@ -1604,6 +1605,10 @@ footer{
         width: 100%;
         height: auto;
         padding: 0 20px;
+    }
+    .section-text-servicio .decorado,
+    .section-text-trabaja .decorado{
+        display: none;
     }
     .grid-servicios {
         gap: 20px;
