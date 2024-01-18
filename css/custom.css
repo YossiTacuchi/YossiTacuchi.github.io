@@ -101,7 +101,14 @@ li.nav-item {
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+
     left: 70px;
+    right: auto;
+
+    width: 420px;
+}
+.carousel-caption.w-x2{
+    width: 720px;
 }
 .carousel-item img {
     width: 100%
@@ -1174,15 +1181,16 @@ footer{
     flex-shrink: 0;
 }
 .valor .icon{
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
 }
 .valor .icon span{ 
-   font-size: 64px;
+   font-size: 48px;
 }
 .valor{
     display: flex;
     padding: 10px 0px;
+    margin-bottom: 5px;
     align-items: center;
     gap: 10px;
     align-self: stretch;
@@ -1191,12 +1199,7 @@ footer{
 
     border-bottom: 1px dashed #FFF;
 }
-.valor:hover{
 
-    gap: 20px;
-
-    border-bottom: 1px solid #FFF;
-}
 
 .clientes{
     display: flex;
@@ -1480,6 +1483,14 @@ footer{
     .carousel-caption {
         top: 27%;
         left: 20px;
+    width: auto;
+    right: 15%;
+    }
+    .carousel-caption.w-x2 {
+        top: 27%;
+        left: 20px;
+    width: auto;
+    right: 15%;
     }
     .carousel-item{
         height: 420px;
@@ -1677,6 +1688,7 @@ footer{
     #rotatingGlobe{
         width: 420px !important;
         height: 420px !important;
+        transform: translate(20px, 0px);
     }
     .transporte{
         width: 185px;
