@@ -1478,32 +1478,33 @@ img.bg-banner-map{
         display: flex;
     }
     .row-tipo1{
-        padding: 40px 0;
+        padding: 30px 0;
     }
     .row-tipo2{
-        padding: 40px 0;
+        padding: 30px 0;
     }
     .row-tipo3{
-        padding: 40px 0;
+        padding: 30px 0;
     }
     .h3,h3{
         font-size: 32px !important;
         line-height: 34px !important;
     }
     p {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
     }
     .btn.btn-ad,
     .btn.btn-ad-outline, 
     .btn.btn-ad-outline-light{
         height: auto;
-        padding: 5px 25px;
+        padding: 8px 15px;
         border-radius: 40px;
+        font-size: 16px;
     }
     .title {
         font-size: 24px;
-        line-height: 28px;
+        line-height: 32px;
     }
     .carousel-caption {
         top: 27%;
@@ -1530,6 +1531,7 @@ img.bg-banner-map{
     .row-tipo1 .col-12{
         width: 100% !important;
         display: flex;
+        gap: 30px;
     }
     .carousel-caption,
     .mercancias,
@@ -1546,7 +1548,8 @@ img.bg-banner-map{
         flex-direction: column !important;
     }
     .mercancias{
-        padding: 0 40px;
+        padding: 0 0px;
+        margin-bottom: 20px;
     }
     .col-12{
         display: block;
@@ -1561,7 +1564,7 @@ img.bg-banner-map{
         padding: 100px 10px;
     }
     .servicios{
-        padding: 20px;
+        padding: 0 20px;
         width: 100%;
     }
     .textos-cta{
@@ -1569,7 +1572,7 @@ img.bg-banner-map{
         gap: 10px;
     }
     .headline {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
     }
     .row-tipo2.row-cta{
@@ -1577,7 +1580,7 @@ img.bg-banner-map{
         padding-right: 20px;
         padding-top: 0;
         padding-bottom: 0;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .row.row-tipo2.row-cta.cta-light {
         padding-bottom: 40px;
@@ -1591,12 +1594,12 @@ img.bg-banner-map{
         align-self: flex-end;
     }
     .img-cta {
-        width: 188px;
-        height: 254px;
+        width: 160px;
+        height: 216px;
     }
     .section-cta{
         width: 100%;
-        gap: 10px;
+        gap: 5px;
     }
     .certificaciones,
     .col-footer{
@@ -1612,6 +1615,7 @@ img.bg-banner-map{
     .menu-footer,
     .navigation{
         align-items: center;
+        gap: 15px;
     }
     .whatsapp-floating {
         right: 15px;
@@ -1626,7 +1630,7 @@ img.bg-banner-map{
     }
     .banner-caption{
         left: 20px;
-        top: 100px;
+        top: 150px;
     }
     .section-text-mision,
     .banner-mision,
@@ -1665,15 +1669,15 @@ img.bg-banner-map{
         width: 100%;
     }
     .section-text-mision .icon {
-        width: 70px;
-        height: 70px;
+        width: 44px;
+        height: 44px;
     }
     .section-text-mision .icon span {
-        font-size: 48px;
+        font-size: 36px;
     }
     .profesionales {
-        padding: 40px 0;
-        gap: 40px;
+        padding: 20px 0 0;
+        gap: 20px;
         align-items: center;
     }
     .location {
@@ -1723,6 +1727,22 @@ img.bg-banner-map{
     .contact-form{
         padding: 20px 0px;
         background-color: #485D96;
+    }
+    .clientes{
+        padding: 15px 0;
+    }
+    .section-btn{
+        padding: 0;
+    }
+    .map-banner{
+        width: 100%;
+        gap: 10px;
+    }
+    .map-banner .area{
+        gap: 10px;
+    }
+    .map-banner .area .location{
+        display: block
     }
   }
 
