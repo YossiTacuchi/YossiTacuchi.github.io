@@ -1306,6 +1306,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 10px;
 }
 .section-text-servicio .decorado .icon{
     display: flex;
