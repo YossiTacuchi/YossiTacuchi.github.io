@@ -1531,7 +1531,7 @@ img.bg-banner-map{
     .row-tipo1 .col-12{
         width: 100% !important;
         display: flex;
-        gap: 30px;
+        gap: 20px;
     }
     .carousel-caption,
     .mercancias,
@@ -1692,6 +1692,7 @@ img.bg-banner-map{
     }
     .section-text-mision {
         order: -1;
+        gap: 15px;
     }
     .section-text-servicio .icon {
         width: 64px;
