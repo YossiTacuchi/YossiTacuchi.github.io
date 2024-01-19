@@ -723,7 +723,7 @@ background: #0000004D !important;
 }
 .img-cta{
     width: 254px;
-    height: 445px;
+    height: 343px;
 }
 .textos-cta{
     display: flex;
@@ -1119,7 +1119,7 @@ footer{
 .map-banner{
     display: flex;
     width: 430px;
-    height: 392px;
+    height: 412px;
     padding: 40px 20px;
     flex-direction: column;
     justify-content: flex-end;
@@ -1146,6 +1146,10 @@ footer{
     align-items: center;
     gap: 5px;
     align-self: flex-start;
+}
+img.bg-banner-map{
+    border-radius: 22px;
+    box-shadow: 10px 10px 35px 0px rgba(76, 72, 150, 0.35);
 }
 
 .section-text-mision{
@@ -1180,8 +1184,8 @@ footer{
     flex-shrink: 0;
 }
 .banner-vision{
-    width: 510px;
-    height: 456px;
+    width: 620px;
+    height: 445px;
     flex-shrink: 0;
 }
 .valor .icon{
@@ -1588,7 +1592,7 @@ footer{
     }
     .img-cta {
         width: 188px;
-        height: 330px;
+        height: 254px;
     }
     .section-cta{
         width: 100%;
@@ -1680,6 +1684,7 @@ footer{
     }
     img.bg-banner-map{
         width: 100%;
+        border-radius: 8px;
     }
     .section-text-mision {
         order: -1;
