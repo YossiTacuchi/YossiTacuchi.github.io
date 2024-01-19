@@ -37,7 +37,7 @@ var globe = planetaryjs.planet();
     }
   }));
   // Set up the globe's initial scale, offset, and rotation.
-  globe.projection.scale(210).translate([210, 210]).rotate([0, -10, 0]);
+  globe.projection.scale(180).translate([180, 180]).rotate([0, -10, 0]);
 
   // Every few hundred milliseconds, we'll draw another random ping.
   var colors = ['red', 'yellow', 'white', 'orange', 'green', 'cyan', 'pink'];
