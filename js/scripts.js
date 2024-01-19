@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
         // Envía los datos al servidor (aquí debes tener un script en el servidor para procesar estos datos)
         $.ajax({
             type: "POST",
-            url: "https://yossitacuchi.github.io/backend/procesar_contacto.php", // Reemplaza con la URL de tu script de procesamiento en el servidor
+            url: "backend/procesar_contacto.php", // Reemplaza con la URL de tu script de procesamiento en el servidor
             data: formData,
             success: function(response) {
                 // Maneja la respuesta del servidor aquí
@@ -52,21 +52,29 @@ jQuery(document).ready(function ($) {
     });
 
     function detectNav(){
-        if(!$('.navbar').hasClass('navbar-info')){
-            if ($(document).scrollTop() > 50) {
-                $(".navbar").addClass('bg-light').removeClass('bg-transparent');
+        //if( $(window).width() > 1024 ){
+            if(!$('.navbar').hasClass('navbar-info')){
+                if ($(document).scrollTop() > 50) {
+                    $(".navbar").addClass('bg-light').removeClass('bg-transparent');
+                    $('.btn-contacto1').removeClass('hide');
+                    $('.btn-contacto2').addClass('hide');
+                }
+                else {
+                    $(".navbar").addClass('bg-transparent').removeClass('bg-light');
+                    if( $(window).width() > 1024 ){
+                        $('.btn-contacto1').addClass('hide');
+                        $('.btn-contacto2').removeClass('hide');
+                    }else{
+                        $('.btn-contacto1').removeClass('hide');
+                        $('.btn-contacto2').addClass('hide');
+                    }
+                }
+            }else{
                 $('.btn-contacto1').removeClass('hide');
                 $('.btn-contacto2').addClass('hide');
             }
-            else {
-                $(".navbar").addClass('bg-transparent').removeClass('bg-light');
-                $('.btn-contacto1').addClass('hide');
-                $('.btn-contacto2').removeClass('hide');
-            }
-        }else{
-            $('.btn-contacto1').removeClass('hide');
-            $('.btn-contacto2').addClass('hide');
-        }
+        
+        
     }
 
     function detectMenuRes(){
