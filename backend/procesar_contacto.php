@@ -10,7 +10,7 @@ try {
     $mensaje = $_POST['mensaje'];
 
     // Configura el destinatario del correo electrónico
-    $destinatario = 'yoshi.tacuchi@gmail.com';
+    $destinatario = 'contacto@adlogistics.com';
 
     // Asunto del correo electrónico
     $asunto = 'Nuevo mensaje del formulario de contacto';
