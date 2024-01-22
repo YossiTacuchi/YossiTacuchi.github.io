@@ -1382,7 +1382,9 @@ img.bg-banner-map{
         height: 352px;
         padding: 150px 20px;
     }
-
+    .carousel-item img{
+        transform: translateX(-25%);
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -1519,7 +1521,7 @@ img.bg-banner-map{
     right: 15%;
     }
     .carousel-item{
-        height: 420px;
+        height: 380px;
     }
     .carousel-caption{
         flex-wrap: nowrap;
